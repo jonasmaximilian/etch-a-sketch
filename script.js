@@ -13,3 +13,11 @@ function createSquare(rows, cols){
 }
 
 createSquare(16, 16);
+
+const gridItems = document.querySelectorAll('.grid-item');
+
+gridItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = "black";
+    });
+});
